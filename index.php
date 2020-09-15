@@ -4,7 +4,10 @@ $bword = strtoLower($_GET['badword']);
 // sotituto parola
 $substitute = '***';
 // parole non ammesse
-$parolacce = array('bastardo', 'maledetto', 'cretino', 'stronzo', 'cazzo', 'stronzata', 'vaffanculo', 'fanculo');
+$parolacce = array(
+    'bastardo', 'maledetto', 'cretino', 'stronzo',
+    'cazzo', 'stronzata', 'vaffanculo', 'fanculo'
+);
 //elenco delle parole non ammesse con virgola e br
 $elencoParoleVietate = implode(',<br>', $parolacce);
 ?>
@@ -30,15 +33,14 @@ $elencoParoleVietate = implode(',<br>', $parolacce);
         }
 
         div {
-            width: 20%;
-            height: 50%;
+            width: 500px;
+            height: 300px;
             background-color: tomato;
             margin: 100px auto;
             text-align: center;
         }
     </style>
 </head>
-
 <body>
     <div>
         <p>
